@@ -6,8 +6,8 @@ class CarouselApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: this.props.data,
-      isLoading: false,
+      sets: this.props.data,
+      items: this.props.data[0].items,
       mode: this.props.mode,
     };
   }
@@ -15,11 +15,7 @@ class CarouselApp extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.isLoading ? (
-          <h2 style={{ textAlign: "center" }}>Loading...</h2>
-        ) : (
-          <CarouselComponent data={this.state.items} />
-        )}
+        <CarouselComponent data={this.state.items} />
       </div>
     );
   }

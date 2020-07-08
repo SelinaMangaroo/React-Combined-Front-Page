@@ -5,21 +5,18 @@ class GridApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: this.props.data,
-      isLoading: false,
+      sets: this.props.data,
+      items: this.props.data[0].items,
       mode: this.props.mode,
     };
   }
 
   render() {
+    console.log(this.state.items);
     return (
       <div className="App">
         <div className="container">
-          {this.state.isLoading ? (
-            <h2 style={{ textAlign: "center" }}>Loading...</h2>
-          ) : (
-            <GridList data={this.state.items} />
-          )}
+          <GridList data={this.state.items} />
         </div>
       </div>
     );

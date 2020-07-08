@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import setData from "./setData";
 import Set from "./Set";
 import FrontPage from "./FrontPage";
 
@@ -12,7 +11,7 @@ class InteractiveSetsApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      setData: setData,
+      setData: this.props.data,
       showSetList: false,
       currentSet: [],
       currentSetName: "",
