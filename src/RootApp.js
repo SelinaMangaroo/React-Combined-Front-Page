@@ -4,11 +4,11 @@ import GridApp from "./components/grid/GridApp";
 import InteractiveSetApp from "./components/interactive-sets/InteractiveSetsApp";
 import data from "./data";
 
-class App extends Component {
+class RootApp extends Component {
   constructor() {
     super();
     this.state = {
-      mode: "grid",
+      mode: "interactive-sets",
       data: data,
     };
   }
@@ -24,4 +24,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default RootApp;
