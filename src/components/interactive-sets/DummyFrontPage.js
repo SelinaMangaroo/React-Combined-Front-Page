@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class FrontPage extends Component {
+class DummyFrontPage extends Component {
   render() {
     return (
       <div>
@@ -37,4 +37,4 @@ class FrontPage extends Component {
   }
 }
 
-export default FrontPage;
+export default DummyFrontPage;

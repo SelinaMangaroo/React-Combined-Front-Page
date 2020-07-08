@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Set from "./Set";
-import FrontPage from "./FrontPage";
+import DummyFrontPage from "./DummyFrontPage";
 
 import "bootstrap/dist/css/bootstrap.css";
 import Button from "react-bootstrap/Button";
@@ -71,7 +71,7 @@ class InteractiveSetsApp extends Component {
             <div className="col-sm-10">
               {this.state.showSetList === false ? (
                 <div>
-                  <FrontPage />
+                  <DummyFrontPage />
                 </div>
               ) : (
                 <div>
